@@ -9,6 +9,7 @@ export default function RetailersPage() {
   const [selectedRegion, setSelectedRegion] = useState("All Regions");
   const [selectedRetailer, setSelectedRetailer] = useState<Retailer | null>(null);
   const [viewMode, setViewMode] = useState<"map" | "list">("map");
+  const googleMapsEmbedApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_EMBED_API_KEY || "";
   const retailersByRegion = getRetailersByRegion();
   const regions = ["All Regions", ...Object.keys(retailersByRegion).sort()];
 
@@ -26,11 +27,11 @@ export default function RetailersPage() {
     if (selectedRetailer) {
       // Show specific location with place search
       const query = encodeURIComponent(`${selectedRetailer.name}, ${selectedRetailer.address}`);
-      return `https://www.google.com/maps/embed/v1/place?key=***REMOVED***&q=${query}&zoom=15`;
+      return `https://www.google.com/maps/embed/v1/place?key=${googleMapsEmbedApiKey}&q=${query}&zoom=15`;
     }
     // Show all South Africa fireplace retailers area - centered on Cape Town area where most are
-    return `https://www.google.com/maps/embed/v1/search?key=***REMOVED***&q=fireplace+retailers+South+Africa&zoom=6&center=-33.5,22`;
-  }, [selectedRetailer]);
+    return `https://www.google.com/maps/embed/v1/search?key=${googleMapsEmbedApiKey}&q=fireplace+retailers+South+Africa&zoom=6&center=-33.5,22`;
+  }, [selectedRetailer, googleMapsEmbedApiKey]);
 
   return (
     <div className="min-h-screen bg-[#0c0c0c] pt-20">
@@ -235,3 +236,4 @@ export default function RetailersPage() {
     </div>
   );
 }
+
