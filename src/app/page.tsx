@@ -9,20 +9,20 @@ import { products } from "@/data/products";
 
 const faqs = [
   { 
-    question: "What fuel types do NORDflam fireplaces use?",
-    answer: "All NORDflam fireplaces are designed for wood burning, using natural seasoned wood logs. Our efficient combustion systems ensure maximum heat output with minimal emissions."
+    question: "FAQ_1_QUESTION",
+    answer: "FAQ_1_ANSWER"
   },
   { 
-    question: "Are your products ECODESIGN 2022 certified?",
-    answer: "Yes, all NORDflam fireplaces meet the strict ECODESIGN 2022 European standards for energy efficiency and emissions, ensuring environmentally responsible heating."
+    question: "FAQ_2_QUESTION",
+    answer: "FAQ_2_ANSWER"
   },
   { 
-    question: "How do I find an authorized retailer?",
-    answer: "Visit our Retailers page to find authorized NORDflam dealers in your area. Our network of certified installers ensures professional installation and after-sales support."
+    question: "FAQ_3_QUESTION",
+    answer: "FAQ_3_ANSWER"
   },
   { 
-    question: "What warranty do you offer?",
-    answer: "We offer a comprehensive 2-year warranty on all NORDflam fireplaces, covering manufacturing defects and ensuring peace of mind with your purchase."
+    question: "FAQ_4_QUESTION",
+    answer: "FAQ_4_ANSWER"
   },
 ];
 
