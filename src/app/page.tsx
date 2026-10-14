@@ -110,8 +110,8 @@ export default function Home() {
 
               {/* Description */}
               <p className="text-white/75 text-lg leading-relaxed max-w-2xl mx-auto mb-10 drop-shadow-[0_2px_18px_rgba(0,0,0,0.55)]">
-                Exceptional fireplaces crafted with precision engineering and timeless design. 
-                Experience the perfect harmony of form and function.
+                A self-initiated fireplace website concept for a fictional brand.
+                Explore original product illustrations and a considered catalogue experience.
               </p>
 
               {/* CTA Buttons */}
@@ -127,7 +127,7 @@ export default function Home() {
                   href="/retailers"
                   className="inline-flex items-center gap-3 px-8 py-4 border border-white/20 text-white text-sm tracking-widest uppercase hover:bg-white/5 transition-all"
                 >
-                  Find a Dealer
+                  About the Concept
                 </Link>
               </div>
               </div>
@@ -357,7 +357,7 @@ export default function Home() {
                 href="/retailers"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black text-sm font-medium tracking-widest uppercase hover:bg-[#ffffff] hover:text-white transition-all"
               >
-                Find a Dealer
+                About the Concept
               </Link>
               <Link
                 href="/products"
