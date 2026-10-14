@@ -26,8 +26,8 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="relative group">
             <Image
-              src="/images/logo/nordflam-logo.png"
-              alt="NORDflam"
+              src="/concept/logo.svg"
+              alt="Emberwell"
               width={160}
               height={40}
               className="h-8 w-auto brightness-0 invert group-hover:opacity-80 transition-opacity"
@@ -63,7 +63,7 @@ export default function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden p-2 text-white hover:text-[#ffffff] transition-colors"
-            aria-label="Toggle menu"
+            aria-label="Toggle menu" aria-expanded={isOpen}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>

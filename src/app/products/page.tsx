@@ -71,7 +71,7 @@ export default function ProductsPage() {
           >
             <div className="flex items-center justify-between mb-8">
               <div>
-                <span className="text-[#666] text-xs tracking-[0.2em] uppercase">
+                <span className="text-[#aaa] text-xs tracking-[0.2em] uppercase">
                   17 Models Available
                 </span>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mt-4">
@@ -79,17 +79,17 @@ export default function ProductsPage() {
                 </h1>
               </div>
               <a
-                href="https://nordflam.eu/"
+                href="/concept"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden md:inline-flex items-center gap-2 text-[#888] text-sm hover:text-white transition-colors"
               >
-                View full range on nordflam.eu
+                View full range on Emberwell.eu
                 <ArrowUpRight className="w-4 h-4" />
               </a>
             </div>
-            <p className="text-[#666] text-lg max-w-2xl">
-              Explore NORDflam SA&apos;s premium cast iron fireplaces. High-quality, 
+            <p className="text-[#aaa] text-lg max-w-2xl">
+              Explore Emberwell&apos;s premium cast iron fireplaces. High-quality, 
               efficient heating solutions designed for durability and style.
             </p>
           </motion.div>
@@ -107,7 +107,7 @@ export default function ProductsPage() {
                 className={`text-xs tracking-widest uppercase whitespace-nowrap transition-colors relative ${
                   activeFilter === filter.id 
                     ? "text-white" 
-                    : "text-[#666] hover:text-white"
+                    : "text-[#aaa] hover:text-white"
                 }`}
               >
                 {filter.label}
@@ -120,7 +120,7 @@ export default function ProductsPage() {
                 )}
               </button>
             ))}
-            <span className="ml-auto text-[#666] text-xs">
+            <span className="ml-auto text-[#aaa] text-xs">
               {filteredProducts.length} {filteredProducts.length === 1 ? "product" : "products"}
             </span>
           </div>
@@ -174,12 +174,12 @@ export default function ProductsPage() {
                       <h3 className="text-white text-sm md:text-base font-medium group-hover:text-[#ffffff] transition-colors mb-1">
                         {product.name}
                       </h3>
-                      <p className="text-[#666] text-xs mb-3">
+                      <p className="text-[#aaa] text-xs mb-3">
                         {product.power} • Wood
                       </p>
                       <div className="flex items-center gap-2">
                         {product.originalPrice && (
-                          <span className="text-[#666] line-through text-xs">
+                          <span className="text-[#aaa] line-through text-xs">
                             R{product.originalPrice.toLocaleString()}
                           </span>
                         )}
@@ -203,11 +203,11 @@ export default function ProductsPage() {
             {[
               { label: "Warranty", value: "2 Years" },
               { label: "Fuel Type", value: "Wood" },
-              { label: "Certification", value: "ECODESIGN 2022" },
+              { label: "Project status", value: "Independent concept" },
               { label: "Material", value: "Cast Iron & Steel" },
             ].map((item, index) => (
               <div key={index} className="text-center md:text-left">
-                <div className="text-[#666] text-xs tracking-[0.2em] uppercase mb-2">
+                <div className="text-[#aaa] text-xs tracking-[0.2em] uppercase mb-2">
                   {item.label}
                 </div>
                 <div className="text-white text-lg md:text-xl font-light">
@@ -225,8 +225,8 @@ export default function ProductsPage() {
           <h2 className="text-3xl md:text-4xl font-light text-white mb-4">
             NEED HELP CHOOSING?
           </h2>
-          <p className="text-[#666] text-lg mb-8 max-w-xl mx-auto">
-            Contact an authorized retailer for expert advice on selecting the 
+          <p className="text-[#aaa] text-lg mb-8 max-w-xl mx-auto">
+            Contact an example retailer for expert advice on selecting the 
             perfect fireplace for your home.
           </p>
           <Link

@@ -20,7 +20,7 @@ export default function Footer() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 pt-20 pb-12">
         <div className="mb-16">
           <h2 className="text-[8vw] md:text-[120px] font-light tracking-[-0.02em] leading-none text-white/5 select-none">
-            NORDFLAM
+            Emberwell
           </h2>
         </div>
 
@@ -36,21 +36,18 @@ export default function Footer() {
                 <path d="M12 2C8 6 6 10 6 13c0 3.31 2.69 6 6 6s6-2.69 6-6c0-3-2-7-6-11zm0 16c-2.21 0-4-1.79-4-4 0-1.5.5-3 2-5.5 1.5 2.5 2 4 2 5.5 0 2.21-1.79 4-4 4z"/>
               </svg>
               <span className="text-white text-sm tracking-[0.2em] uppercase font-medium">
-                NORDflam
+                Emberwell
               </span>
             </div>
-            <p className="text-[#666] text-sm leading-relaxed max-w-sm mb-6">
-              Over two decades of leadership in sustainable heating technology. 
-              Premium fireplaces designed for modern living.
-            </p>
-            <p className="text-[#444] text-xs">
-              ECODESIGN 2022 Certified
+            <p className="text-white/60 text-sm">Independent concept · fictional brand · no business contacts.</p>
+            <p className="text-[#aaa] text-xs">
+              Original concept illustrations
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <h3 className="text-[#666] text-xs tracking-[0.2em] uppercase mb-6">
+            <h3 className="text-[#aaa] text-xs tracking-[0.2em] uppercase mb-6">
               Navigation
             </h3>
             <ul className="space-y-3">
@@ -69,19 +66,19 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-[#666] text-xs tracking-[0.2em] uppercase mb-6">
+            <h3 className="text-[#aaa] text-xs tracking-[0.2em] uppercase mb-6">
               Contact
             </h3>
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:info@nordflamsa.co.za"
+                  href="/concept"
                   className="text-[#888] hover:text-white transition-colors text-sm"
                 >
-                  info@nordflamsa.co.za
+                  Local demo only
                 </a>
               </li>
-              <li className="text-[#666] text-sm">
+              <li className="text-[#aaa] text-sm">
                 Southern Africa
               </li>
             </ul>
@@ -92,14 +89,14 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/5">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[#444] text-xs">
-            © {new Date().getFullYear()} NORDflam SA. All Rights Reserved.
+          <p className="text-[#aaa] text-xs">
+            © {new Date().getFullYear()} Emberwell. Independent concept design.
           </p>
           <div className="flex items-center gap-6">
-            <Link href="/privacy" className="text-[#444] hover:text-[#888] transition-colors text-xs">
+            <Link href="/privacy" className="text-[#aaa] hover:text-[#888] transition-colors text-xs">
               Privacy
             </Link>
-            <Link href="/terms" className="text-[#444] hover:text-[#888] transition-colors text-xs">
+            <Link href="/terms" className="text-[#aaa] hover:text-[#888] transition-colors text-xs">
               Terms
             </Link>
           </div>

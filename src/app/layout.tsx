@@ -17,9 +17,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "NORDflam SA | Premium Sustainable Fireplaces",
-  description: "NORDflam is a trusted name in sustainable heating, delivering exceptional fireplaces to homes across the globe. Over two decades of leadership in sustainable heating technology.",
-  keywords: "fireplaces, sustainable heating, cast iron fireplaces, premium fireplaces, eco-friendly heating, NORDflam",
+  metadataBase: new URL("https://emberwell-concept.cameronfalck03.workers.dev"),
+  robots: { index: false, follow: true },
+  title: "Emberwell | Independent Website Concept",
+  description: "Emberwell is an independent website concept for a fictional fireplaces and interior warmth brand. Designed by Pixaloom; no commissioned client, sales or services.",
+  keywords: "fireplaces, sustainable heating, cast iron fireplaces, premium fireplaces, eco-friendly heating, Emberwell",
 };
 
 export default function RootLayout({
@@ -33,7 +35,8 @@ export default function RootLayout({
         className={`${playfair.variable} ${inter.variable} antialiased bg-[#0a0a0a] text-[#f5f5f5]`}
       >
         <Navbar />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
+        <aside className="concept-notice" aria-label="Independent concept disclosure"><strong>Emberwell · Independent concept design</strong><span> Fictional brand, created by Pixaloom as a self-initiated portfolio study. No commissioned client or trading business. Prices, specifications and service content are illustrative. Forms are local demos and send nothing.</span><a href="/concept">About this concept</a></aside>
         <Footer />
       </body>
     </html>

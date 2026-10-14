@@ -9,20 +9,20 @@ import { products } from "@/data/products";
 
 const faqs = [
   { 
-    question: "FAQ_1_QUESTION",
-    answer: "FAQ_1_ANSWER"
+    question: "Is Emberwell a real business?",
+    answer: "Emberwell is a fictional brand in an independent Pixaloom concept design."
   },
   { 
-    question: "FAQ_2_QUESTION",
-    answer: "FAQ_2_ANSWER"
+    question: "Can I purchase a fireplace?",
+    answer: "No. The catalogue and prices are illustrative. There is no checkout or trading business."
   },
   { 
-    question: "FAQ_3_QUESTION",
-    answer: "FAQ_3_ANSWER"
+    question: "Are these certified products?",
+    answer: "No. Images are original concept illustrations; specifications do not establish product performance or certification."
   },
   { 
-    question: "FAQ_4_QUESTION",
-    answer: "FAQ_4_ANSWER"
+    question: "Who created this website?",
+    answer: "Pixaloom created this self-initiated study to explore responsive catalogue design."
   },
 ];
 
@@ -41,10 +41,10 @@ const staggerContainer = {
 };
 
 const categories = [
-  { name: "CAST IRON", count: "12 Products", href: "/products" },
-  { name: "STEEL", count: "5 Products", href: "/products" },
-  { name: "WOOD BURNING", count: "17 Products", href: "/products" },
-  { name: "RECUPERATION", count: "6 Products", href: "/products" },
+  { name: "CAST IRON", count: "Concept collection", href: "/products" },
+  { name: "STEEL", count: "Concept collection", href: "/products" },
+  { name: "WOOD BURNING", count: "Concept collection", href: "/products" },
+  { name: "RECUPERATION", count: "Concept collection", href: "/products" },
 ];
 
 export default function Home() {
@@ -58,8 +58,8 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/landing%20page.png"
-            alt="NORDflam premium fireplace"
+            src="/concept/hero.svg"
+            alt="Emberwell premium fireplace"
             fill
             className="object-cover"
             priority
@@ -88,14 +88,14 @@ export default function Home() {
               {/* Premium Badge */}
               <div className="inline-flex items-center gap-3 px-4 py-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full mb-8 mx-auto">
                 <div className="w-2 h-2 rounded-full bg-[#ffffff] animate-pulse" />
-                <span className="text-[#999] text-xs tracking-widest uppercase">Premium European Craftsmanship</span>
+                <span className="text-[#999] text-xs tracking-widest uppercase">Independent Fireplace Concept</span>
               </div>
 
               {/* Brand Name - Large Display */}
               <div className="mb-8 drop-shadow-[0_2px_24px_rgba(0,0,0,0.65)]">
                 <Image
-                  src="/images/logo/nordflam-logo.png"
-                  alt="NORDflam"
+                  src="/concept/logo.svg"
+                  alt="Emberwell"
                   width={1200}
                   height={300}
                   priority
@@ -105,7 +105,7 @@ export default function Home() {
               
               {/* Tagline */}
               <p className="text-white/70 text-sm tracking-widest uppercase mb-6 drop-shadow-[0_2px_18px_rgba(0,0,0,0.6)]">
-                The Art of Warmth — Since 1998
+                The Art of Warmth · An Independent Concept
               </p>
 
               {/* Description */}
@@ -143,7 +143,7 @@ export default function Home() {
             {/* Left - Image */}
             <div className="aspect-[4/3] bg-[#1a1a1a] rounded-sm overflow-hidden relative">
               <Image
-                src="/landing%20page%20picture%202.png"
+                src="/concept/hero.svg"
                 alt="Modern luxury interior with fireplace"
                 fill
                 className="object-cover"
@@ -155,10 +155,10 @@ export default function Home() {
             <div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white leading-tight mb-6">
                 PERFECTLY INTEGRATED<br />
-                <span className="text-[#666]">INTO YOUR HOME</span>
+                <span className="text-[#aaa]">INTO YOUR HOME</span>
               </h2>
-              <p className="text-[#666] text-lg leading-relaxed mb-8 max-w-lg">
-                NORDflam fireplaces are designed to seamlessly blend with modern interiors. 
+              <p className="text-[#aaa] text-lg leading-relaxed mb-8 max-w-lg">
+                Emberwell fireplaces are designed to seamlessly blend with modern interiors. 
                 Our products combine cutting-edge technology with timeless aesthetics.
               </p>
               <Link
@@ -177,8 +177,8 @@ export default function Home() {
       <section className="py-24 bg-[#0c0c0c] border-t border-white/5">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="mb-12">
-            <span className="text-[#666] text-xs tracking-widest uppercase">
-              17 Models Available — Made in Europe
+            <span className="text-[#aaa] text-xs tracking-widest uppercase">
+              Six fictional models · Original illustrations
             </span>
             <h2 className="text-3xl md:text-4xl font-light text-white mt-4">
               PRODUCT CATEGORIES
@@ -195,7 +195,7 @@ export default function Home() {
                   <div className="text-white text-sm font-medium mb-2 group-hover:text-[#ffffff] transition-colors">
                     {category.name}
                   </div>
-                  <div className="text-[#666] text-xs">
+                  <div className="text-[#aaa] text-xs">
                     {category.count}
                   </div>
                 </Link>
@@ -210,7 +210,7 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="flex items-end justify-between mb-12">
             <div>
-              <span className="text-[#666] text-xs tracking-widest uppercase">
+              <span className="text-[#aaa] text-xs tracking-widest uppercase">
                 Premium Collection
               </span>
               <h2 className="text-3xl md:text-4xl font-light text-white mt-4">
@@ -250,7 +250,7 @@ export default function Home() {
                           <h3 className="text-white text-sm md:text-base font-medium group-hover:text-[#ffffff] transition-colors">
                             {product.name}
                           </h3>
-                          <p className="text-[#666] text-xs mt-1">
+                          <p className="text-[#aaa] text-xs mt-1">
                             {product.power} • Wood
                           </p>
                         </div>
@@ -286,9 +286,9 @@ export default function Home() {
             <div>
               <h2 className="text-4xl md:text-5xl font-light text-white leading-tight mb-6">
                 FREQUENTLY<br />
-                <span className="text-[#666]">ASKED QUESTIONS</span>
+                <span className="text-[#aaa]">ASKED QUESTIONS</span>
               </h2>
-              <p className="text-[#666] text-lg leading-relaxed mb-8 max-w-lg">
+              <p className="text-[#aaa] text-lg leading-relaxed mb-8 max-w-lg">
                 Have questions about our fireplaces? Find answers to common questions 
                 about installation, maintenance, and product specifications.
               </p>
@@ -314,7 +314,7 @@ export default function Home() {
                     <span className={`text-sm ${openFaq === index ? 'text-[#ffffff]' : 'text-white'}`}>
                       {faq.question}
                     </span>
-                    <ChevronDown className={`w-4 h-4 text-[#666] transition-transform duration-300 ${openFaq === index ? 'rotate-180 text-[#ffffff]' : ''}`} />
+                    <ChevronDown className={`w-4 h-4 text-[#aaa] transition-transform duration-300 ${openFaq === index ? 'rotate-180 text-[#ffffff]' : ''}`} />
                   </button>
                   <AnimatePresence>
                     {openFaq === index && (
@@ -344,10 +344,10 @@ export default function Home() {
             <div>
               <h2 className="text-4xl md:text-5xl font-light text-white leading-tight mb-6">
                 STAY WARM WITH<br />
-                <span className="text-[#ffffff]">NORDFLAM</span>
+                <span className="text-[#ffffff]">Emberwell</span>
               </h2>
-              <p className="text-[#666] text-lg leading-relaxed max-w-lg">
-                Find an authorized retailer near you and experience the warmth 
+              <p className="text-[#aaa] text-lg leading-relaxed max-w-lg">
+                Find an example retailer near you and experience the warmth 
                 and elegance of our premium fireplaces.
               </p>
             </div>
