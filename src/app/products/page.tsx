@@ -84,7 +84,7 @@ export default function ProductsPage() {
                 rel="noopener noreferrer"
                 className="hidden md:inline-flex items-center gap-2 text-[#888] text-sm hover:text-white transition-colors"
               >
-                View full range on Emberwell.eu
+                View concept details
                 <ArrowUpRight className="w-4 h-4" />
               </a>
             </div>
