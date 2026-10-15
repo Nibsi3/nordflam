@@ -26,7 +26,7 @@ export default function ProductDetailPage() {
   if (!product) {
     return (
       <div className="min-h-screen bg-[#0c0c0c] pt-20 flex items-center justify-center">
-        <div className="text-center">
+        <div className="min-w-0 break-words text-center">
           <h1 className="text-4xl font-light text-white mb-4">
             Product Not Found
           </h1>
@@ -168,8 +168,8 @@ export default function ProductDetailPage() {
               </p>
 
               {/* Key Specs - Horizontal */}
-              <div className="grid grid-cols-4 gap-4 mb-8 pb-8 border-b border-white/10">
-                <div className="text-center">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8 pb-8 border-b border-white/10">
+                <div className="min-w-0 break-words text-center">
                   <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-[#1a1a1a] flex items-center justify-center">
                     <Flame className="w-5 h-5 text-[#ffffff]" />
                   </div>
@@ -178,26 +178,26 @@ export default function ProductDetailPage() {
                   </div>
                   <div className="text-[#aaa] text-[10px] uppercase tracking-wider">Power</div>
                 </div>
-                <div className="text-center">
+                <div className="min-w-0 break-words text-center">
                   <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-[#1a1a1a] flex items-center justify-center">
                     <Shield className="w-5 h-5 text-[#ffffff]" />
                   </div>
                   <div className="text-white text-sm font-medium">{product.warranty}</div>
                   <div className="text-[#aaa] text-[10px] uppercase tracking-wider">Warranty</div>
                 </div>
-                <div className="text-center">
+                <div className="min-w-0 break-words text-center">
                   <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-[#1a1a1a] flex items-center justify-center">
                     <Thermometer className="w-5 h-5 text-[#ffffff]" />
                   </div>
                   <div className="text-white text-sm font-medium">{product.fuelType}</div>
                   <div className="text-[#aaa] text-[10px] uppercase tracking-wider">Fuel</div>
                 </div>
-                <div className="text-center">
+                <div className="min-w-0 break-words text-center">
                   <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-[#1a1a1a] flex items-center justify-center">
                     <Zap className="w-5 h-5 text-[#ffffff]" />
                   </div>
-                  <div className="text-white text-sm font-medium">A+</div>
-                  <div className="text-[#aaa] text-[10px] uppercase tracking-wider">Energy</div>
+                  <div className="text-white text-sm font-medium">Not rated</div>
+                  <div className="text-[#aaa] text-[10px] uppercase tracking-wider">Concept</div>
                 </div>
               </div>
 
@@ -331,7 +331,7 @@ export default function ProductDetailPage() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-[#0c0c0c] p-5 rounded-lg border border-white/5 card-noise">
                     <div className="text-[#aaa] text-xs uppercase tracking-wider mb-2">Energy Class</div>
-                    <div className="text-[#ffffff] text-4xl font-light">A+</div>
+                    <div className="text-[#ffffff] text-4xl font-light">Not rated</div>
                   </div>
                   <div className="bg-[#0c0c0c] p-5 rounded-lg border border-white/5 card-noise">
                     <div className="text-[#aaa] text-xs uppercase tracking-wider mb-2">Certification</div>
@@ -385,9 +385,9 @@ export default function ProductDetailPage() {
                   { label: "Nominal Power Output", value: product.power },
                   ...(product.powerMax ? [{ label: "Maximum Power Output", value: product.powerMax }] : []),
                   { label: "Fuel Type", value: product.fuelType },
-                  { label: "Energy Efficiency Class", value: "A+" },
+                  { label: "Energy rating", value: "Not certified — concept only" },
                   { label: "Warranty Period", value: product.warranty },
-                  { label: "Certification", value: "Illustrative concept" },
+                  { label: "Project context", value: "Independent concept" },
                   { label: "Material", value: product.material },
                   { label: "Glass Type", value: "Ceramic Heat-Resistant" },
                   { label: "Flue Outlet", value: "Top / Rear" },
@@ -400,10 +400,10 @@ export default function ProductDetailPage() {
                 ].map((spec, index) => (
                   <div
                     key={index}
-                    className="flex items-center justify-between py-4 border-b border-white/5"
+                    className="grid grid-cols-2 gap-4 py-4 border-b border-white/5"
                   >
                     <span className="text-[#888] text-sm">{spec.label}</span>
-                    <span className="text-white text-sm font-medium">{spec.value}</span>
+                    <span className="min-w-0 break-words text-right text-white text-sm font-medium">{spec.value}</span>
                   </div>
                 ))}
               </div>
@@ -474,7 +474,7 @@ export default function ProductDetailPage() {
                     <h3 className="text-white text-sm font-medium group-hover:text-[#ffffff] transition-colors">
                       {relProduct.name}
                     </h3>
-                    <div className="flex items-center justify-between mt-2">
+                    <div className="flex flex-wrap items-center justify-between gap-2 mt-2">
                       <span className="text-white text-sm">
                         R{relProduct.price.toLocaleString()}
                       </span>
