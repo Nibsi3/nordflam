@@ -8,19 +8,19 @@ import { ArrowRight, ChevronDown, Flame, Shield } from "lucide-react";
 import { products } from "@/data/products";
 
 const faqs = [
-  { 
+  {
     question: "Is Emberwell a real business?",
     answer: "Emberwell is a fictional brand in an independent Pixaloom concept design."
   },
-  { 
+  {
     question: "Can I purchase a fireplace?",
     answer: "No. The catalogue and prices are illustrative. There is no checkout or trading business."
   },
-  { 
+  {
     question: "Are these certified products?",
-    answer: "No. Images are original concept illustrations; specifications do not establish product performance or certification."
+    answer: "No. Images show the original product photography; specifications do not establish product performance or certification."
   },
-  { 
+  {
     question: "Who created this website?",
     answer: "Pixaloom created this self-initiated study to explore responsive catalogue design."
   },
@@ -58,7 +58,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/concept/hero.svg"
+            src="/landing%20page.png"
             alt="Emberwell premium fireplace"
             fill
             className="object-cover"
@@ -102,7 +102,7 @@ export default function Home() {
                   className="w-[80vw] max-w-[760px] mx-auto h-auto filter brightness-125 contrast-110"
                 />
               </div>
-              
+
               {/* Tagline */}
               <p className="text-white/70 text-sm tracking-widest uppercase mb-6 drop-shadow-[0_2px_18px_rgba(0,0,0,0.6)]">
                 The Art of Warmth · An Independent Concept
@@ -111,7 +111,7 @@ export default function Home() {
               {/* Description */}
               <p className="text-white/75 text-lg leading-relaxed max-w-2xl mx-auto mb-10 drop-shadow-[0_2px_18px_rgba(0,0,0,0.55)]">
                 A self-initiated fireplace website concept for a fictional brand.
-                Explore original product illustrations and a considered catalogue experience.
+                Explore product photography and a considered catalogue experience.
               </p>
 
               {/* CTA Buttons */}
@@ -143,7 +143,7 @@ export default function Home() {
             {/* Left - Image */}
             <div className="aspect-[4/3] bg-[#1a1a1a] rounded-sm overflow-hidden relative">
               <Image
-                src="/concept/hero.svg"
+                src="/landing%20page%20picture%202.png"
                 alt="Modern luxury interior with fireplace"
                 fill
                 className="object-cover"
@@ -158,7 +158,7 @@ export default function Home() {
                 <span className="text-[#aaa]">INTO YOUR HOME</span>
               </h2>
               <p className="text-[#aaa] text-lg leading-relaxed mb-8 max-w-lg">
-                Emberwell fireplaces are designed to seamlessly blend with modern interiors. 
+                Emberwell fireplaces are designed to seamlessly blend with modern interiors.
                 Our products combine cutting-edge technology with timeless aesthetics.
               </p>
               <Link
@@ -289,7 +289,7 @@ export default function Home() {
                 <span className="text-[#aaa]">ASKED QUESTIONS</span>
               </h2>
               <p className="text-[#aaa] text-lg leading-relaxed mb-8 max-w-lg">
-                Have questions about our fireplaces? Find answers to common questions 
+                Have questions about our fireplaces? Find answers to common questions
                 about installation, maintenance, and product specifications.
               </p>
               <Link
@@ -347,7 +347,7 @@ export default function Home() {
                 <span className="text-[#ffffff]">Emberwell</span>
               </h2>
               <p className="text-[#aaa] text-lg leading-relaxed max-w-lg">
-                Find an example retailer near you and experience the warmth 
+                Find an example retailer near you and experience the warmth
                 and elegance of our premium fireplaces.
               </p>
             </div>
